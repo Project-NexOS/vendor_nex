@@ -1,4 +1,6 @@
+extras/
 proprietary/*
 prebuilt/archive
 signing/keys/*
+translations/
 !signing/keys/BUILD
