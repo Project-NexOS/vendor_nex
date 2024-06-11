@@ -164,6 +164,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/%/libfuse-lite.so \
     system/%/libntfs-3g.so
 
+# Game space
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
