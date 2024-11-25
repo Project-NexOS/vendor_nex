@@ -6,25 +6,10 @@ CUSTOM_DATE_MINUTE := $(shell date -u +%M)
 CUSTOM_BUILD_DATE_UTC := $(shell date -d '$(CUSTOM_DATE_YEAR)-$(CUSTOM_DATE_MONTH)-$(CUSTOM_DATE_DAY) $(CUSTOM_DATE_HOUR):$(CUSTOM_DATE_MINUTE) UTC' +%s)
 CUSTOM_BUILD_DATE := $(CUSTOM_DATE_YEAR)$(CUSTOM_DATE_MONTH)$(CUSTOM_DATE_DAY)-$(CUSTOM_DATE_HOUR)$(CUSTOM_DATE_MINUTE)
 
-CUSTOM_PLATFORM_VERSION := 15.0
+CUSTOM_PLATFORM_VERSION := 15
 
-CUSTOM_VERSION := PixelOS_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)
+CUSTOM_VERSION := NexOS_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)
 CUSTOM_VERSION_PROP := fifteen
-
-# PixelOS Platform Version
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.custom.build.date=$(BUILD_DATE) \
-    ro.custom.device=$(CUSTOM_BUILD) \
-    ro.custom.fingerprint=$(ROM_FINGERPRINT) \
-    ro.custom.version=$(CUSTOM_VERSION) \
-    ro.modversion=$(CUSTOM_VERSION)
-
-# Updater
-ifeq ($(IS_OFFICIAL),true)
-    PRODUCT_PRODUCT_PROPERTIES += \
-        net.pixelos.build_type=ci \
-        net.pixelos.version=$(CUSTOM_VERSION_PROP)
-endif
 
 # Signing
 ifneq (eng,$(TARGET_BUILD_VARIANT))

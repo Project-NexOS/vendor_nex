@@ -1,0 +1,18 @@
+#!/bin/bash
+BLUE="\e[34m"
+WHITE="\e[97m"
+GREEN="\e[32m"
+ENDCOLOR="\e[0m"
+
+echo -e "${WHITE}                                              ___           ___       ${ENDCOLOR}"
+echo -e "${WHITE}                                             /\  \         /\__\      ${ENDCOLOR}"
+echo -e "${WHITE}  ________   _______      ___    ___        /::\  \       /:/ _/_     ${ENDCOLOR}"
+echo -e "${WHITE} |\   ___  \|\  ___ \    |\  \  /  /|      /:/\:\  \     /:/ /\  \    ${ENDCOLOR}"
+echo -e "${WHITE} \ \  \\ \  \ \   __/|    \ \  \/  / /     /:/  \:\  \   /:/ /::\  \  ${ENDCOLOR}"
+echo -e "${WHITE}  \ \  \\ \  \ \  \_|/__   \ \    / /     /:/__/ \:\__\ /:/_/:/\:\__\ ${ENDCOLOR}"
+echo -e "${WHITE}   \ \  \\ \  \ \  \_|\ \   /     \/      \:\  \ /:/  / \:\/:/ /:/  / ${ENDCOLOR}"
+echo -e "${WHITE}    \ \__\\ \__\ \_______\ /  /\   \       \:\  /:/  /   \::/ /:/  /  ${ENDCOLOR}"
+echo -e "${WHITE}     \|__| \|__|\|_______/__/ /\ __\       \:\/:/  /     \/_/:/  /    ${ENDCOLOR}"
+echo -e "${WHITE}                         |__|/ \|__|        \::/  /        /:/  /     ${ENDCOLOR}"
+echo -e "${WHITE}                                             \/__/         \/__/      ${ENDCOLOR}"
+echo -e "${GREEN}================================================================================${ENDCOLOR}"
